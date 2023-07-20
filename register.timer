@@ -1,0 +1,10 @@
+[Unit]
+Description=Schedule a register service after system reboot
+
+[Timer]
+Persistent=true
+OnBootSec=30s
+Unit=register.service
+
+[Install]
+WantedBy=timers.target

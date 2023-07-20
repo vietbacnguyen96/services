@@ -1,0 +1,12 @@
+[Unit]
+Description=Register service using face recognition
+
+[Service]
+Environment="DISPLAY=:0"
+Type=simple
+RemainAfterExit=yes
+User=vkist2
+ExecStart=/usr/bin/python /home/vkist2/frontend_facerec_VKIST/app.py
+
+#[Install]
+#WantedBy=multi-user.target

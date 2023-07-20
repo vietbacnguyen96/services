@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for facerec webpage
+
+[Timer]
+OnUnitInactiveSec=10
+Unit=facerec_webpage.service
+
+[Install]
+WantedBy=timers.target

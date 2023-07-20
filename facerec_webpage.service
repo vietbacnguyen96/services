@@ -1,0 +1,15 @@
+[Unit]
+Description=VKIST Face Recognition Service
+Requires=register.service
+After=register.service
+
+
+[Service]
+Environment="DISPLAY=:0"
+Type=simple
+User=vkist2
+ExecStart=/usr/bin/chromium-browser http://127.0.0.1:5000/ --start-fullscreen
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
