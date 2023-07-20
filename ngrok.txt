@@ -1,0 +1,8 @@
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz
+
+sudo tar xvzf ngrok-stable-linux-arm64.tgz -C /usr/local/bin
+
+snap install ngrok
+
+ngrok authtoken 2CGKm26dlmMvfvgT1kS56rCZqFo_6XdnrxwdCFYT7xXHbdm59
+
