@@ -3,7 +3,14 @@ Description=Forward port 22 to ngrok server using tcp method
 
 [Service]
 Type=simple
-Restart=always
+
+Restart=on-failure
+StartLimitBurst=2
+# Restart, but not more than once every 10 minutes
+#StartLimitInterval=600
+# Restart, but not more than once every 30s (for testing purposes)
+StartLimitInterval=30
+
 RemainAfterExit=yes
 User=vkist2
 ExecStart=/usr/local/bin/ngrok tcp 22
