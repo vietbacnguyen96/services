@@ -1,4 +1,4 @@
-sudo /etc/rc.local
+sudo nano /etc/rc.local
 
 Add following codes:
 
