@@ -6,3 +6,5 @@ snap install ngrok
 
 ngrok authtoken 2CGKm26dlmMvfvgT1kS56rCZqFo_6XdnrxwdCFYT7xXHbdm59
 
+ngrok authtoken 27gujlNKWbFLLVAM88NPdwcVx9a_5NdeGXRamv7cvSKwXqM1T
+
