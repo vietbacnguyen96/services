@@ -1,0 +1,12 @@
+[Unit]
+Description=Register service using face recognition
+
+[Service]
+Environment="DISPLAY=:0"
+Type=simple
+RemainAfterExit=yes
+User=xavier01
+ExecStart=/usr/bin/python3.8 /home/xavier01/streaming_ip_cam.py
+
+#[Install]
+#WantedBy=multi-user.target
